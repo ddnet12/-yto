@@ -1,1 +1,35 @@
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Простое казино</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="casino-container">
+        <h1>Казино "Удача"</h1>
+        
+        <div class="balance-container">
+            <p>Ваш баланс: <span id="balance">1000</span> ₽</p>
+        </div>
+        
+        <div class="game-container">
+            <div class="slots">
+                <div class="slot" id="slot1">🍒</div>
+                <div class="slot" id="slot2">🍋</div>
+                <div class="slot" id="slot3">🍊</div>
+            </div>
+            
+            <div class="controls">
+                <input type="number" id="bet" min="10" max="1000" value="50">
+                <button id="spin-btn">Крутить!</button>
+            </div>
+            
+            <p id="result"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
